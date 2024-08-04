@@ -35,9 +35,9 @@ const MainScreenPage = () => {
 
   const handleFloorChange = (event) => {
     const value = event.target.value;
-    const floorNumber = parseInt(value, 10);
+    const floorNumber = value === '' ? '' : parseInt(value, 10);
 
-    if (!isNaN(floorNumber) && floorNumber >= 0 && floorNumber <= 15) {
+    if (value === '' || (floorNumber >= 0 && floorNumber <= 15)) {
       setFloorInput(value);
       setErrorMessage(''); // Clear error message on valid input
     } else {
