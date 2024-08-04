@@ -15,10 +15,10 @@ export default function LadiesHostelBlockSelectionPage() {
 
   return (
     <Container style={{ textAlign: 'center', marginTop: '10%' }}>
-      <RocketIcon style={{ fontSize: 50, color: '#1976d2' }} />
+      {/* <RocketIcon style={{ fontSize: 50, color: '#1976d2' }} />
       <Typography variant="h4" component="h1" gutterBottom>
         ElevateMe
-      </Typography>
+      </Typography> */}
       <Typography variant="h5" gutterBottom>
         Ladies' Hostel
       </Typography>
