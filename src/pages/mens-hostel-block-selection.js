@@ -18,10 +18,10 @@ export default function MensHostelBlockSelectionPage() {
       {/* <RocketIcon style={{ fontSize: 50, color: '#1976d2' }} />
       <Typography variant="h4" component="h1" gutterBottom>
         ElevateMe
-      </Typography>
+      </Typography> */}
       <Typography variant="h5" gutterBottom>
         Men's Hostel
-      </Typography> */}
+      </Typography>
       <Grid container spacing={2} justifyContent="center">
         {blocks.map((block) => (
           <Grid item key={block}>
