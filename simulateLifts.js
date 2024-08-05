@@ -114,12 +114,13 @@ async function simulateLiftData() {
       }
     }
 
-    // Establish connection once and run the simulation every 5 seconds
-    await connectToMongo();
-    setInterval(simulate, 5000);
+    // Establish connection once and run the simulation every 10 seconds
+    connectToMongo().then(() => {
+      setInterval(simulate, 5000);
+    });
   } catch (error) {
     console.error('Error simulating lift data:', error);
   }
 }
 
-module.exports = { simulateLiftData };
+simulateLiftData();
